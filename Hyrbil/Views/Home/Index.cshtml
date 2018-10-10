@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewBag.Title = "Home";
+}
+<style>
+    .btn a {
+        color: white;
+        text-decoration: none;
+    }
+
+    body {
+        background-color: #f1f1f1;
+    }
+</style>
+<div class="text-center">
+    @ViewBag.Greeting!
+    <p>Welcome to this car renting website, whould you like to rent one of our ten green cars?</p>
+    <div class="btn btn-success">@Html.ActionLink("Yes, take me there!", "Registration")</div>
+</div>

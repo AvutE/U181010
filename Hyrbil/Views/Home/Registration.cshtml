@@ -1,0 +1,19 @@
+﻿@model Hyrbil.Models.Info
+
+@{
+    ViewBag.Title = "Registatraion";
+}
+<div class="panel panel-success">
+    <div class="panel-heading text-center">
+        <h2>Registatraion</h2>
+    </div>
+    <div class"panel-body>
+        @using (Html.BeginForm())
+        {
+            @Html.ValidationSummary()
+            <div class="form-group">
+                <label>Name:</label> @Html.TextBoxFor(x => x.Name, new { @class="form-control"})
+            </div>
+        }
+    </div>
+</div>
